@@ -14,14 +14,15 @@
 // }
 // wrapGifts(gifts);
 
-// let newArray = ["adam", "sophia", "jesus"]
+let newArray = ["adam", "sophia", "jesus"]
 
-// function writeCards(array, eventName){
-//     for( let i = 0; i < array.length; i++){
-//         console.log(`Thank you, ${array[i]}, for the wonderful ${eventName} gift`)
-//     }
-//     return array;
-// }
+function writeCards(newArray, eventName){
+    let messages = []
+    for( let i = 0; i < newArray.length; i++){
+        messages.push(`Thank you, ${newArray[i]}, for the wonderful ${eventName} gift!`)
+    }
+    return messages;
+}
 
 // writeCards(["Ada", "Brandon", "Steve"], "birthday")
 // writeCards(newArray, "Birthday")
